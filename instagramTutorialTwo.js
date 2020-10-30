@@ -2,17 +2,16 @@
 //Today we are going to learn about map()
 
 const scheduleAtCodaisseur = [
-    { date: "Week-1", teacher: "Rein", subject: "javascript" },
-    { date: "Week-2", teacher: "David", subject: "react" },
-    { date: "Week-4", teacher: "Matias", subject: "database" },
-    { date: "Week-5", teacher: "Jeroen", subject: "redux"}
+    { date: "Week-1", teacher: "Rein", subject: "JavaScript" },
+    { date: "Week-2", teacher: "David", subject: "React" },
+    { date: "Week-4", teacher: "Matias", subject: "Databases" },
+    { date: "Week-5", teacher: "Jeroen", subject: "Redux" },
 ]
 
-//I want an array with the subjects
+//I want an array with only the subjects
 const whatILearnAtCodaisseur = scheduleAtCodaisseur.map(data => data.subject)
+console.log({whatILearnAtCodaisseur})
 
-//I want an array with the teacher
+//Now I want an array with only the teachers
 const codaisseurTeachers = scheduleAtCodaisseur.map(data => data.teacher)
-
-console.log(whatILearnAtCodaisseur)
-console.log(codaisseurTeachers)
+console.log({codaisseurTeachers})
